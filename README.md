@@ -1,7 +1,7 @@
-# Tech Trend Analysis [work in progress!]
+# Tech Trend Analysis [WIP]
 A repo that accepts a list of websites and .pdf documents, parses them using an LLM to determine relevant past, present and future trends, and then generates a report and wordcloud for the user.
 
-Features integration with 
+Features integration with LangChain for tracing and analysis.
 
 ![Example wordcloud output](future_concepts_wordcloud.png "Example Wordcloud Output")
 ![Example wordcloud output](future_concepts_2.png "Another example Wordcloud Output")
@@ -14,6 +14,9 @@ mamba env create -f env.yml
 
 ## Set your environment variables
 Modify the included `.env_example` with your LangChain and Google AI credentials, and save the updated file as `.env`.
+
+## Update the data sources
+Modify the `data/sources.yaml` file as needed. Some example .pdf documents and websites are provided.
 
 # Usage
 ```
