@@ -1,0 +1,8 @@
+# Directories containing .pdfs with relevant tech trend data
+pdfs:
+  - ./data
+
+# Websites with relevant tech trend data
+urls:
+  - https://ras.papercept.net/conferences/conferences/ICRA25/program/ICRA25_ProgramAtAGlanceWeb.html
+  - http://iros2024-abudhabi.org/accepted-papers
