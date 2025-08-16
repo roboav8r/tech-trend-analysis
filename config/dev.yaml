@@ -1,0 +1,14 @@
+# LLM to be used
+llm:
+  provider: "Google"  # Can be "Google" or "OpenAI"
+  model: "gemini-2.0-flash" # e.g., "gemini-1.5-flash", "gpt-4o", "gpt-3.5-turbo"
+
+
+# Directories containing .pdfs with relevant tech trend data
+pdfs:
+  # - ./data
+
+# Websites with relevant tech trend data
+urls:
+  - https://ras.papercept.net/conferences/conferences/ICRA25/program/ICRA25_ProgramAtAGlanceWeb.html
+  - http://iros2024-abudhabi.org/accepted-papers
