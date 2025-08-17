@@ -3,7 +3,8 @@ A repo that accepts a list of websites and .pdf documents, parses them using an 
 
 Features integration with LangChain for tracing and analysis.
 
-![Example wordcloud output](future_concepts_wordcloud.png "Example Wordcloud Output")
+![Future technology wordcloud](output/img/Future_Technology_wordcloud.png "Future Technology Wordcloud")
+![Future domains wordcloud](output/img/Future_Domain_wordcloud.png "Future Domain Wordcloud")
 
 This is a work in progress, but feel free to raise an issue in the meantime if you're interested.
 
@@ -42,4 +43,7 @@ streamlit run streamlit_app.py # The streamlit browser app version
 ```
 
 # Future Work
+- Modularity fixes
+- CONCEPT TREES! Nest sub-concepts (e.g. Learning for Control, Learning for Vision) under main concepts (Learning)
 - Implement OpenAI function calls and example files
+- Take year of publication into account for temporal context

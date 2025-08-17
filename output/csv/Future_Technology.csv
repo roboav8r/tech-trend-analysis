@@ -1,0 +1,172 @@
+concept_name,temporal_context,concept_type,count
+Autonomous Vehicle Perception,Future,Technology,3
+Integrating Motion Planning and Learning,Future,Technology,2
+Imitation Learning for Manipulation,Future,Technology,2
+Mechanism Design,Future,Technology,2
+Active Sensing,Future,Technology,1
+Aerial Robots,Future,Technology,1
+Aerial Robots: Mechanics and Control,Future,Technology,1
+Agile Legged Locomotion,Future,Technology,1
+Aerial Manipulation,Future,Technology,1
+3D Content Generation,Future,Technology,1
+3D Content Capture,Future,Technology,1
+Assistive Human-Robot Interaction,Future,Technology,1
+Autonomous Vehicle Navigation,Future,Technology,1
+Autonomous Vehicles,Future,Technology,1
+Big Data,Future,Technology,1
+Bimanual Manipulation,Future,Technology,1
+Bio-Inspired Robot Learning,Future,Technology,1
+Bioinspiration and Biomimetics,Future,Technology,1
+Calibration,Future,Technology,1
+Collision Avoidance,Future,Technology,1
+Continual Learning,Future,Technology,1
+Continuum Robots,Future,Technology,1
+Control,Future,Technology,1
+Datasets and Benchmarking,Future,Technology,1
+Deep Learning for Visual Perception,Future,Technology,1
+Deformable Object Manipulation,Future,Technology,1
+Deformable Objects,Future,Technology,1
+Design,Future,Technology,1
+Design and Control,Future,Technology,1
+Diffusion Models,Future,Technology,1
+Diffusion for Manipulation,Future,Technology,1
+Diffusion-Based Visual Perception and Learning,Future,Technology,1
+End-Effectors,Future,Technology,1
+Exoskeletons,Future,Technology,1
+Explainable AI in Robotics,Future,Technology,1
+Formal Methods,Future,Technology,1
+Foundation Models for Manipulation,Future,Technology,1
+Geometric Foundations,Future,Technology,1
+Grasping,Future,Technology,1
+Hand and Gripper Design,Future,Technology,1
+Applications in the Wild,Future,Technology,1
+Assembly,Future,Technology,1
+Acceptability and Trust,Future,Technology,1
+Human-Aware Robot Motion,Future,Technology,1
+Human Motion Sensing,Future,Technology,1
+Haptics,Future,Technology,1
+"Imaging, Scanning, Localization",Future,Technology,1
+Imitation Learning,Future,Technology,1
+In-Hand Manipulation,Future,Technology,1
+Industrial Robots,Future,Technology,1
+Human-Robot Interaction: Physiological Sensing,Future,Technology,1
+Information Gathering,Future,Technology,1
+Interactive Robot Learning,Future,Technology,1
+Language Guided Manipulation,Future,Technology,1
+Large Models for Autonomous Vehicles,Future,Technology,1
+Large Models for Manipulation,Future,Technology,1
+Learning Based Planning and Control,Future,Technology,1
+Learning for Legged Locomotion,Future,Technology,1
+Image and 3D Segmentation,Future,Technology,1
+Learning for Manipulation,Future,Technology,1
+Learning for Manipulation and Navigation,Future,Technology,1
+Learning for Robot Control,Future,Technology,1
+Learning for Navigation,Future,Technology,1
+Legged Locomotion,Future,Technology,1
+Legged Robots,Future,Technology,1
+Localization,Future,Technology,1
+Learning-Based SLAM,Future,Technology,1
+Logistics and Task Planning,Future,Technology,1
+Manipulating Challenging Objects,Future,Technology,1
+Manipulation Planning,Future,Technology,1
+Manipulation,Future,Technology,1
+Manipulation Planning and Control,Future,Technology,1
+Manipulation and Locomotion Using Magnetic Fields,Future,Technology,1
+Manufacturing and Assembly Processes,Future,Technology,1
+Manufacturing and Processes,Future,Technology,1
+Medical Robot Systems,Future,Technology,1
+Micro/Nano Robots,Future,Technology,1
+Mobile Manipulation: Planning and Control,Future,Technology,1
+Mobile Robots,Future,Technology,1
+Model Predictive Control,Future,Technology,1
+Model Predictive Control for Legged Robots,Future,Technology,1
+Motion Control,Future,Technology,1
+Motion Planning,Future,Technology,1
+Motion Planning and Control,Future,Technology,1
+Motion Prediction,Future,Technology,1
+Multi-Robot Exploration,Future,Technology,1
+Multi-Robot Formation Control,Future,Technology,1
+Multi-Robot Path Planning,Future,Technology,1
+Multi-Robot Planning,Future,Technology,1
+Multi-Robot Planning and Navigation,Future,Technology,1
+Multi-Robot SLAM and Mapping,Future,Technology,1
+Multi-Robot Swarms,Future,Technology,1
+Multi-Robot Systems,Future,Technology,1
+Multi-Robot and Human-Robot Teams,Future,Technology,1
+Multifingered Hands,Future,Technology,1
+Novel Methods for Mapping and Localization,Future,Technology,1
+Novel Sensors,Future,Technology,1
+Object Detection,Future,Technology,1
+Offroad Navigation,Future,Technology,1
+Optimization and Optimal Control,Future,Technology,1
+Optimization and Trajectory Planning,Future,Technology,1
+Perception,Future,Technology,1
+Perception Systems,Future,Technology,1
+Perception for Human-Robot Interaction,Future,Technology,1
+Perception for Manipulation,Future,Technology,1
+Physical Human-Robot Interaction,Future,Technology,1
+Place Recognition,Future,Technology,1
+Planinng and Control for Legged Robots,Future,Technology,1
+Planning Around People for Social Navigation,Future,Technology,1
+Planning and Control in Challenging Environments,Future,Technology,1
+Planning and Large Language Models,Future,Technology,1
+Planning and Simulation,Future,Technology,1
+Planning for Autonomous Racing,Future,Technology,1
+Planning under Uncertainty,Future,Technology,1
+Planning with Contact,Future,Technology,1
+"Planning, Scheduling and Coordination",Future,Technology,1
+Point Cloud Registration,Future,Technology,1
+Pose Estimation,Future,Technology,1
+Prediction,Future,Technology,1
+Prosthetics,Future,Technology,1
+RADAR-Based Navigation,Future,Technology,1
+Radiance Fields,Future,Technology,1
+Reconfigurable Robots,Future,Technology,1
+Reinforcement Learning,Future,Technology,1
+Reinforcement Learning Applications,Future,Technology,1
+Representation Learning,Future,Technology,1
+Resiliency and Security,Future,Technology,1
+Robot Applications,Future,Technology,1
+Robot Foundation Models,Future,Technology,1
+Robot Interaction Interfaces,Future,Technology,1
+Robot Mapping,Future,Technology,1
+Robot Safety,Future,Technology,1
+Robot Vision,Future,Technology,1
+Robust Control,Future,Technology,1
+SLAM,Future,Technology,1
+Safe Control,Future,Technology,1
+Safety and Control in HRI,Future,Technology,1
+Scene Reconstruction Using Radiance Fields,Future,Technology,1
+Sensor Fusion,Future,Technology,1
+Social Navigation,Future,Technology,1
+Soft Actuators,Future,Technology,1
+Soft Robotic Grasping,Future,Technology,1
+Soft Robotics,Future,Technology,1
+"Soft Robotics: Modeling, Control, and Learning",Future,Technology,1
+Soft Sensors,Future,Technology,1
+Software Tools,Future,Technology,1
+State Estimation,Future,Technology,1
+Surgical Robotics: Laparoscopy,Future,Technology,1
+Surgical Robotics: Planning,Future,Technology,1
+Surgical Robotics: Steerable Catheters/Needles,Future,Technology,1
+Surgical Robotics: Systems,Future,Technology,1
+System Design,Future,Technology,1
+Tactile Sensing,Future,Technology,1
+Tactile Sensing and Manipulation,Future,Technology,1
+Task and Motion Planning,Future,Technology,1
+Teleoperation,Future,Technology,1
+Teleoperation and Human-Robot Interaction,Future,Technology,1
+Testing,Future,Technology,1
+Tracking,Future,Technology,1
+Trajectory Planning,Future,Technology,1
+Transfer Learning,Future,Technology,1
+Validation,Future,Technology,1
+Verification,Future,Technology,1
+Vision Applications,Future,Technology,1
+Vision-Based Navigation,Future,Technology,1
+Vision-Based Tactile Sensing,Future,Technology,1
+Vision-Language-Action Models,Future,Technology,1
+Visual Perception and Learning,Future,Technology,1
+Visual Servoing and Tracking,Future,Technology,1
+Visual-Inertial Odometry,Future,Technology,1
+Wearable Robotics,Future,Technology,1

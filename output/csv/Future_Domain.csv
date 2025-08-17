@@ -1,0 +1,21 @@
+concept_name,temporal_context,concept_type,count
+Agricultural Automation,Future,Domain,1
+Assistive Robotics,Future,Domain,1
+Automation,Future,Domain,1
+Ergonomics,Future,Domain,1
+Field Robotics,Future,Domain,1
+Forestry,Future,Domain,1
+Human-Robot Collaboration,Future,Domain,1
+Human-Robot Interaction,Future,Domain,1
+Intelligent Transportation,Future,Domain,1
+Intelligent Transportation Systems,Future,Domain,1
+Marine Robotics,Future,Domain,1
+Medical Robotics,Future,Domain,1
+Mining,Future,Domain,1
+Rehabilitation,Future,Domain,1
+Robotics,Future,Domain,1
+Robotics and Automation in Construction and Industry,Future,Domain,1
+Robotics and Automation in Life Science and Rescue Applications,Future,Domain,1
+Smart Cities,Future,Domain,1
+Space Robotics,Future,Domain,1
+Surgical Robotics,Future,Domain,1

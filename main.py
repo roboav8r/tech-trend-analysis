@@ -14,8 +14,8 @@ from langchain_openai import ChatOpenAI
 from langchain_community.document_loaders import PyPDFDirectoryLoader, WebBaseLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.pydantic_v1 import BaseModel, Field
-from typing import Literal, List
+from pydantic import BaseModel, Field
+from typing import Literal, List, get_args
 
 # --- 1. SETUP and CONFIGURATION ---
 load_dotenv()
@@ -71,11 +71,19 @@ if __name__ == "__main__":
         default='config/default.yaml',
         help='Path to the YAML configuration file.'
     )
+    parser.add_argument(
+        '--output_dir',
+        type=str,
+        default='output',
+        help='Path to the output directory.'
+    )
     args = parser.parse_args()
 
     print(f"Loading configuration from: {args.config}")
     with open(args.config, 'r') as f:
         config = yaml.safe_load(f)
+    
+    output_dir = args.output_dir
 
     # 1. Initialize the correct LLM
     if 'llm' not in config:
@@ -123,31 +131,37 @@ if __name__ == "__main__":
 
     print("\n--- Analysis Complete ---")
     print(results_df)
-    
-    if not results_df.empty:
-        print("\n## Concept Type Breakdown:")
-        print(results_df['concept_type'].value_counts()) # This will now work correctly
 
-        present_concepts = results_df[results_df['temporal_context'] == 'Present']
-        future_concepts = results_df[results_df['temporal_context'] == 'Future']
-        print("\n## Top Present Concepts Identified:")
-        print(present_concepts['concept_name'].value_counts().nlargest(15))
-        
-        print("\n## Top Future Concepts Identified:")
-        print(future_concepts['concept_name'].value_counts().nlargest(15))
-        
-        # Generate and save word clouds
-        future_text = ' '.join(future_concepts['concept_name'].dropna())
-        if future_text:
-            wordcloud = WordCloud(width=1200, height=600, background_color='white').generate(future_text)
-            wordcloud.to_file("future_concepts_wordcloud.png")
-            print("\nWord cloud saved to 'future_concepts_wordcloud.png'")
 
-            plt.figure(figsize=(10, 5))
-            plt.imshow(wordcloud, interpolation='bilinear')
-            plt.axis('off') # Hide the axes
-            plt.title("Future Concepts")
-            plt.show()
+    # Iterate through concepts types and temporal contexts
+    concept_types = get_args(TechnicalConcept.model_fields['concept_type'].annotation)
+    temporal_contexts = get_args(TechnicalConcept.model_fields['temporal_context'].annotation)
 
-    else:
-        print("No concepts were extracted from the documents.")
+    for concept_type in concept_types:
+
+        for temporal_context in temporal_contexts:
+
+            temp_concepts_df = results_df[(results_df['temporal_context'] == temporal_context) & (results_df['concept_type'] == concept_type)]
+            
+            if not temp_concepts_df.empty:
+                print("\n## Concept Type Breakdown:")
+                print(temp_concepts_df.value_counts())
+
+                # Create output directory if it does not exist
+                os.makedirs(os.path.join(output_dir,"img"), exist_ok=True)
+                os.makedirs(os.path.join(output_dir,"csv"), exist_ok=True)
+
+                # Save dataframe
+                temp_concepts_df.value_counts().to_csv(os.path.join(output_dir,"csv",f"{temporal_context}_{concept_type}.csv"))
+
+                # Create and save wordcloud image
+                concept_text = ' '.join(temp_concepts_df['concept_name'].dropna())
+                if concept_text:
+                    wordcloud = WordCloud(width=1200, height=600, background_color='white').generate(concept_text)
+                    plt.figure(figsize=(10, 5))
+                    plt.imshow(wordcloud, interpolation='bilinear')
+                    plt.axis('off') # Hide the axes
+                    plt.title(f"{temporal_context} {concept_type}(s)")
+                    plt.savefig(os.path.join(output_dir,"img",f"{temporal_context}_{concept_type}_wordcloud.png"))
+            else:
+                print(f"No {temporal_context} {concept_type}(s) were extracted from the documents.")
